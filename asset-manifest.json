@@ -1,13 +1,17 @@
 {
   "files": {
     "main.css": "/goit-react-hw-05-movies-Olga/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-05-movies-Olga/static/js/main.e5b4bc84.js",
+    "main.js": "/goit-react-hw-05-movies-Olga/static/js/main.f434a405.js",
+    "static/js/597.ae1aaddf.chunk.js": "/goit-react-hw-05-movies-Olga/static/js/597.ae1aaddf.chunk.js",
+    "static/js/881.4cd1b98b.chunk.js": "/goit-react-hw-05-movies-Olga/static/js/881.4cd1b98b.chunk.js",
     "index.html": "/goit-react-hw-05-movies-Olga/index.html",
     "main.7acaea2f.css.map": "/goit-react-hw-05-movies-Olga/static/css/main.7acaea2f.css.map",
-    "main.e5b4bc84.js.map": "/goit-react-hw-05-movies-Olga/static/js/main.e5b4bc84.js.map"
+    "main.f434a405.js.map": "/goit-react-hw-05-movies-Olga/static/js/main.f434a405.js.map",
+    "597.ae1aaddf.chunk.js.map": "/goit-react-hw-05-movies-Olga/static/js/597.ae1aaddf.chunk.js.map",
+    "881.4cd1b98b.chunk.js.map": "/goit-react-hw-05-movies-Olga/static/js/881.4cd1b98b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.e5b4bc84.js"
+    "static/js/main.f434a405.js"
   ]
 }
