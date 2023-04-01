@@ -19,3 +19,22 @@ export async function APIMovie(id) {
     return error;
   }
 }
+
+export async function APIReview(id) {
+  try {
+    return await axios(`${URL}/movie/${id}/reviews?api_key=${API_KEY}`);
+  } catch (error) {
+    console.error(error);
+    return error;
+  }
+}
+
+//
+export async function APICast(id) {
+  try {
+    return await axios(`${URL}/movie/${id}/credits?api_key=${API_KEY}`);
+  } catch (error) {
+    console.error(error);
+    return error;
+  }
+}
