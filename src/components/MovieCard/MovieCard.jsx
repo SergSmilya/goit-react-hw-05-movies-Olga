@@ -22,7 +22,7 @@ export default function MovieCard({ movie }) {
       <h1>
         {original_title} ({Number.parseInt(release_date)})
       </h1>
-      <p>User score: {vote_average * 10}%</p>
+      <p>User score: {(vote_average * 10).toFixed(0)}%</p>
       <h2>Overview</h2>
       <p>{overview}</p>
       <h3>Genres</h3>

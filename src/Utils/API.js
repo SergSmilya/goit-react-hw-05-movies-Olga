@@ -29,10 +29,18 @@ export async function APIReview(id) {
   }
 }
 
-//
 export async function APICast(id) {
   try {
     return await axios(`${URL}/movie/${id}/credits?api_key=${API_KEY}`);
+  } catch (error) {
+    console.error(error);
+    return error;
+  }
+}
+
+export async function APISearchMovie(query) {
+  try {
+    return await axios(`${URL}/search/movie?api_key=${API_KEY}&query=${query}`);
   } catch (error) {
     console.error(error);
     return error;
