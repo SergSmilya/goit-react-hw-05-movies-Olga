@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { APISearchMovie } from '../Utils/API';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 export default function Movie() {
   const [query, setQuery] = useState('');
@@ -13,7 +14,9 @@ export default function Movie() {
     if (titleToSearch)
       APISearchMovie(titleToSearch)
         .then(({ data }) => setMovies(data.results))
-        .catch(error => console.log(error));
+        .catch(error =>
+          toast.error('Something goes wrong! Please, try again!')
+        );
   }, [titleToSearch]);
 
   function onChange(e) {

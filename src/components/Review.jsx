@@ -1,6 +1,7 @@
 import { APIReview } from 'Utils/API';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 export default function Review() {
   const { id } = useParams();
@@ -9,7 +10,7 @@ export default function Review() {
   useEffect(() => {
     APIReview(id)
       .then(({ data }) => setReviews(data.results))
-      .catch(error => console.log(error));
+      .catch(error => toast.error('Something goes wrong! Please, try again!'));
   }, [id]);
 
   return (

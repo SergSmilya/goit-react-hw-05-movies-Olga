@@ -4,7 +4,8 @@ import Home from 'Pages/Home';
 import MovieDetails from 'Pages/MovieDetails';
 import { lazy } from 'react';
 import Movie from 'Pages/Movie';
-import SharedLayout from './SharedLayout';
+import SharedLayout from './SharedLayout/SharedLayout';
+
 // import Cast from './Cast';
 // import Review from './Review';
 

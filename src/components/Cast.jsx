@@ -1,12 +1,15 @@
 import { APICast } from 'Utils/API';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 export default function Cast() {
   const [casts, setCasts] = useState([]);
   const { id } = useParams();
   useEffect(() => {
-    APICast(id).then(({ data }) => setCasts(data.cast));
+    APICast(id)
+      .then(({ data }) => setCasts(data.cast))
+      .catch(error => toast.error('Something goes wrong! Please, try again!'));
   }, [id]);
 
   return (

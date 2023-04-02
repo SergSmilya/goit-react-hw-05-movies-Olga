@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { APITrending } from '../Utils/API';
+import { toast } from 'react-toastify';
 
 export default function Home() {
   const [movies, setMovies] = useState([]);
@@ -11,7 +12,7 @@ export default function Home() {
       .then(({ data }) => {
         setMovies(data.results);
       })
-      .catch(error => console.log(error));
+      .catch(error => toast.error('Something goes wrong! Please, try again!'));
   }, []);
 
   return (

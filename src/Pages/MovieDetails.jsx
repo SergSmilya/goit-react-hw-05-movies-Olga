@@ -1,6 +1,7 @@
 import MovieCard from 'components/MovieCard/MovieCard';
 import { useEffect, useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { APIMovie } from 'Utils/API';
 
 export default function MovieDetails() {
@@ -11,7 +12,7 @@ export default function MovieDetails() {
   useEffect(() => {
     APIMovie(id)
       .then(({ data }) => setMovie(data))
-      .catch(error => console.log(error));
+      .catch(error => toast.error('Something goes wrong! Please, try again!'));
   }, [id]);
 
   return (
