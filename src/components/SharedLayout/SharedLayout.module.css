@@ -1,5 +1,11 @@
+nav {
+    margin: 15px auto 25px;
+    border-bottom: 1px solid var(--text-color);
+}
+
 .navList {
     display: flex;
     font-size: large;
+    justify-content: space-evenly;
 
 }

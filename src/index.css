@@ -7,7 +7,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: aliceblue;
+  color: var(--text-color);
+}
+
+:root {
+  --main-color: #f0e8e8;
+  --text-color: #0d0221;
+  --accent-color: #0a7c06;
+
 }
 
 code {
@@ -33,11 +40,12 @@ dd {
 }
 
 body {
-  background-color: rgb(17, 14, 14);
+  background-color: var(--main-color);
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  margin: 10px 30px;
 }
 
 ul {
@@ -48,7 +56,7 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: aliceblue;
+  color: var(--text-color);
 }
 
 img {
@@ -63,5 +71,6 @@ select {
 }
 
 .active {
-  color: tomato;
+  color: var(--accent-color);
+  font-weight: 500;
 }

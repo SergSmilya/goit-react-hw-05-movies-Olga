@@ -1,0 +1,17 @@
+.cardBox {
+    display: flex;
+}
+
+.descr {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.details {
+    padding-top: 15px;
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+}
